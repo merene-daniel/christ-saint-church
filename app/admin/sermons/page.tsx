@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface Sermon {
   _id: string;
@@ -26,6 +27,7 @@ const empty = {
 };
 
 export default function AdminSermonsPage() {
+  const router = useRouter();
   const [sermons, setSermons] = useState<Sermon[]>([]);
   const [form, setForm] = useState(empty);
   const [editingId, setEditingId] = useState<string | null>(null);
@@ -90,6 +92,11 @@ export default function AdminSermonsPage() {
     }
   }
 
+  async function handleLogout() {
+    await fetch("/api/admin/logout", { method: "POST" });
+    router.push("/admin/login");
+  }
+
   async function handleDelete(id: string) {
     if (!confirm("Delete this sermon?")) return;
     await fetch(`/api/sermons/${id}`, { method: "DELETE" });
@@ -128,9 +135,17 @@ export default function AdminSermonsPage() {
   return (
     <div className="min-h-screen bg-cream py-12 px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-8">
-          <p className="font-accent text-church-blue uppercase tracking-[4px] text-xs mb-1">Admin</p>
-          <h1 className="font-display text-4xl text-church-dark font-bold">Sermon Manager</h1>
+        <div className="mb-8 flex items-start justify-between">
+          <div>
+            <p className="font-accent text-church-blue uppercase tracking-[4px] text-xs mb-1">Admin</p>
+            <h1 className="font-display text-4xl text-church-dark font-bold">Sermon Manager</h1>
+          </div>
+          <button
+            onClick={handleLogout}
+            className="text-xs font-body px-4 py-2 border border-gray-300 text-gray-500 hover:bg-gray-50 transition-colors mt-2"
+          >
+            Sign Out
+          </button>
         </div>
 
         {/* Form */}

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { connectToDatabase } from "@/lib/mongodb";
 import { Sermon } from "@/lib/models";
 
@@ -29,6 +30,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     await connectToDatabase();
     const sermon = await Sermon.create(body);
+    revalidatePath("/sermons");
     return NextResponse.json({ success: true, sermon }, { status: 201 });
   } catch (error) {
     console.error("POST sermon error:", error);
