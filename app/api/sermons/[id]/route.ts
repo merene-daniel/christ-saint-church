@@ -2,11 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { connectToDatabase } from "@/lib/mongodb";
 import { Sermon } from "@/lib/models";
 
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PUT(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
+    const { id } = await params;
     const body = await req.json();
     await connectToDatabase();
-    const sermon = await Sermon.findByIdAndUpdate(params.id, body, { new: true });
+    const sermon = await Sermon.findByIdAndUpdate(id, body, { new: true });
     if (!sermon) return NextResponse.json({ error: "Not found" }, { status: 404 });
     return NextResponse.json({ success: true, sermon });
   } catch (error) {
@@ -15,10 +16,11 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   }
 }
 
-export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
+    const { id } = await params;
     await connectToDatabase();
-    await Sermon.findByIdAndDelete(params.id);
+    await Sermon.findByIdAndDelete(id);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("DELETE sermon error:", error);
