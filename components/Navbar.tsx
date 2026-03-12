@@ -65,13 +65,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
-        <Link
-          href="/contact"
-          className="hidden lg:inline-flex items-center gap-2 bg-church-blue hover:bg-church-blue-light text-white px-5 py-2.5 text-sm font-body transition-all duration-300 hover:shadow-lg hover:shadow-church-blue/40 hover:-translate-y-0.5"
-        >
-          Join Us
-        </Link>
+       
 
         {/* Mobile burger */}
         <button

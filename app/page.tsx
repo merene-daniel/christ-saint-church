@@ -150,7 +150,7 @@ export default function HomePage() {
             <h2 className="font-display text-4xl text-church-dark font-bold mb-2">
               Pastor Beza Merne
             </h2>
-            <p className="font-accent italic text-gold text-lg mb-6">ፓስተር ቤዛ ሜርኔ</p>
+            <p className="font-accent italic text-gold text-lg mb-6">ፓስተር ቤዛ መርኔ</p>
             <div className="w-12 h-0.5 bg-gradient-to-r from-church-blue to-gold mb-6" />
             <p className="font-body text-[#5a4a40] leading-relaxed mb-4 text-sm">
               Pastor Beza Merne is the Lead Pastor of Christ Saints&apos; Church. His heart is set on delivering God&apos;s Word to people, strengthening fellowship, and growing the church community.
