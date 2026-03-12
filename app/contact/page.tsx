@@ -15,7 +15,7 @@ export default function ContactPage() {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) {
       setStatus("error");
-      setResponseMsg("ስም፣ ኢሜይል እና መልዕክት ያስፈልጋሉ።");
+      setResponseMsg("Name, email, and message are required.");
       return;
     }
     setStatus("loading");
@@ -28,15 +28,15 @@ export default function ContactPage() {
       const data = await res.json();
       if (res.ok) {
         setStatus("success");
-        setResponseMsg(data.message || "መልዕክትዎ ደርሷል!");
+        setResponseMsg(data.message || "Your message has been received!");
         setForm({ name: "", email: "", phone: "", message: "" });
       } else {
         setStatus("error");
-        setResponseMsg(data.error || "ችግር ተፈጥሯል።");
+        setResponseMsg(data.error || "Something went wrong. Please try again.");
       }
     } catch {
       setStatus("error");
-      setResponseMsg("ኔትወርክ ችግር ተፈጥሯል።");
+      setResponseMsg("A network error occurred. Please try again.");
     }
   };
 
@@ -47,9 +47,9 @@ export default function ContactPage() {
         <div className="relative z-10">
           <p className="font-accent text-gold/75 uppercase tracking-[5px] text-sm mb-4">Contact</p>
           <h1 className="font-display text-5xl md:text-6xl text-white font-black">
-            <span className="text-shimmer">አድራሻ</span>
+            <span className="text-shimmer">Contact Us</span>
           </h1>
-          <p className="font-body text-white/50 text-base mt-3">ወደ ቤቱ ኑ — ሁሌ ክፍት ናት</p>
+          <p className="font-body text-white/50 text-base mt-3">Come as you are — the doors are always open</p>
         </div>
       </section>
 
@@ -58,15 +58,15 @@ export default function ContactPage() {
           {/* Info */}
           <div>
             <span className="font-accent text-church-blue uppercase tracking-[4px] text-xs block mb-3">Find Us</span>
-            <h2 className="font-display text-4xl text-church-dark font-bold mb-3">ቦታ ዝርዝር</h2>
+            <h2 className="font-display text-4xl text-church-dark font-bold mb-3">Location & Info</h2>
             <div className="w-12 h-0.5 bg-gradient-to-r from-church-blue to-gold mb-8" />
 
             <div className="space-y-6">
               {[
-                { icon: "📍", label: "ቦታ", val: "አዲስ አበባ፣ ኢትዮጵያ" },
-                { icon: "📞", label: "ስልክ", val: "+251 9XX XXX XXX" },
-                { icon: "✉️", label: "ኢሜይል", val: "info@christsaintschurch.org" },
-                { icon: "🕐", label: "የቢሮ ሰዓት", val: "ሰኞ – ዓርብ · ጠዋት 9 – ምሽት 5" },
+                { icon: "📍", label: "Location", val: "Alexandria, Virginia" },
+                { icon: "📞", label: "Phone", val: "+1 (XXX) XXX-XXXX" },
+                { icon: "✉️", label: "Email", val: "info@christsaintschurch.org" },
+                { icon: "🕐", label: "Office Hours", val: "Mon – Fri · 9 AM – 5 PM" },
               ].map((item) => (
                 <div key={item.label} className="flex gap-4 items-start">
                   <div className="w-11 h-11 bg-church-blue/10 flex items-center justify-center text-xl flex-shrink-0">
@@ -84,12 +84,12 @@ export default function ContactPage() {
 
             {/* Service times */}
             <div className="mt-10 p-6 bg-cream border-l-4 border-gold">
-              <h3 className="font-display text-church-dark text-lg font-bold mb-4">የአምልኮ ሰዓቶች</h3>
+              <h3 className="font-display text-church-dark text-lg font-bold mb-4">Service Times</h3>
               <div className="space-y-3">
                 {[
-                  { day: "እሁድ", time: "ጠዋት 9:00", label: "ዋና አምልኮ" },
-                  { day: "ረቡዕ", time: "ምሽት 6:30", label: "ቃሉ ጥናት" },
-                  { day: "ሰኞ", time: "ምሽት 7:00", label: "ጸሎት ስብሰባ" },
+                  { day: "Sunday", time: "9:00 AM", label: "Main Worship" },
+                  { day: "Wednesday", time: "6:30 PM", label: "Bible Study" },
+                  { day: "Monday", time: "7:00 PM", label: "Prayer Meeting" },
                 ].map((s) => (
                   <div key={s.day} className="flex justify-between items-center py-2 border-b border-gold/15 last:border-0">
                     <div>
@@ -106,7 +106,7 @@ export default function ContactPage() {
           {/* Form */}
           <div>
             <span className="font-accent text-church-blue uppercase tracking-[4px] text-xs block mb-3">Send Message</span>
-            <h2 className="font-display text-4xl text-church-dark font-bold mb-3">መልዕክት ላኩ</h2>
+            <h2 className="font-display text-4xl text-church-dark font-bold mb-3">Send a Message</h2>
             <div className="w-12 h-0.5 bg-gradient-to-r from-church-blue to-gold mb-8" />
 
             {status === "success" && (
@@ -122,9 +122,9 @@ export default function ContactPage() {
 
             <div className="space-y-4">
               {[
-                { name: "name", label: "ሙሉ ስምዎ *", type: "text", placeholder: "ፍቅረ ወርቅ ሀ." },
-                { name: "email", label: "ኢሜይል *", type: "email", placeholder: "email@example.com" },
-                { name: "phone", label: "ስልክ", type: "tel", placeholder: "+251 9..." },
+                { name: "name", label: "Full Name *", type: "text", placeholder: "John Doe" },
+                { name: "email", label: "Email *", type: "email", placeholder: "email@example.com" },
+                { name: "phone", label: "Phone", type: "tel", placeholder: "+1 (555) 000-0000" },
               ].map((f) => (
                 <div key={f.name}>
                   <label className="font-accent text-xs tracking-widest uppercase text-[#8a7a70] block mb-1.5">
@@ -142,14 +142,14 @@ export default function ContactPage() {
               ))}
               <div>
                 <label className="font-accent text-xs tracking-widest uppercase text-[#8a7a70] block mb-1.5">
-                  መልዕክትዎ *
+                  Message *
                 </label>
                 <textarea
                   name="message"
                   value={form.message}
                   onChange={handleChange}
                   rows={5}
-                  placeholder="ምን ልናውቅ ትፈልጋለህ?..."
+                  placeholder="How can we help you?..."
                   className="w-full border border-[#e0d5cc] bg-cream px-4 py-3 font-body text-church-dark text-sm focus:outline-none focus:border-church-blue transition-colors resize-none"
                 />
               </div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                 disabled={status === "loading"}
                 className="w-full bg-church-blue hover:bg-church-blue-light disabled:opacity-60 text-white font-body py-4 transition-all duration-300 hover:shadow-lg hover:shadow-church-blue/30 hover:-translate-y-0.5 disabled:cursor-not-allowed text-sm tracking-wide"
               >
-                {status === "loading" ? "እየተላከ ነው..." : "ላክ →"}
+                {status === "loading" ? "Sending..." : "Send Message →"}
               </button>
             </div>
           </div>

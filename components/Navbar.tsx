@@ -5,12 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navLinks = [
-  { href: "/", label: "መነሻ" },
-  { href: "/about", label: "ስለ እኛ" },
-  { href: "/pastor", label: "ፓስተር" },
-  { href: "/sermons", label: "ስብከቶች" },
-  { href: "/events", label: "ዝግጅቶች" },
-  { href: "/contact", label: "አድራሻ" },
+  { href: "/", label: "" },
+  { href: "/about", label: "About" },
+  { href: "/pastor", label: "Pastors" },
+  { href: "/sermons", label: "Sermons" },
+  { href: "/events", label: "Events" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -70,7 +70,7 @@ export default function Navbar() {
           href="/contact"
           className="hidden lg:inline-flex items-center gap-2 bg-church-blue hover:bg-church-blue-light text-white px-5 py-2.5 text-sm font-body transition-all duration-300 hover:shadow-lg hover:shadow-church-blue/40 hover:-translate-y-0.5"
         >
-          ቤተሰቡን ተቀላቀሉ →
+          Join Us
         </Link>
 
         {/* Mobile burger */}
@@ -109,7 +109,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
               className="inline-block bg-church-blue text-white px-6 py-2.5 font-body text-sm mt-2"
             >
-              ቤተሰቡን ተቀላቀሉ →
+              Join Us
             </Link>
           </li>
         </ul>

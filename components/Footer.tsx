@@ -25,22 +25,22 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="font-accent text-gold text-lg mb-5 tracking-widest uppercase text-sm">
-              ፈጣን አገናኞች
+              Links
             </h4>
             <ul className="space-y-3">
               {[
-                { href: "/about", label: "ስለ ቤተክርስቲያናችን" },
-                { href: "/pastor", label: "ፓስተር ቤዛ ሜርኔ" },
-                { href: "/sermons", label: "ስብከቶች" },
-                { href: "/events", label: "ቀጣይ ዝግጅቶች" },
-                { href: "/contact", label: "አድራሻና ካርታ" },
+                { href: "/about", label: "About" },
+                { href: "/pastor", label: "Pastor" },
+                { href: "/sermons", label: "Sermons" },
+                { href: "/events", label: "Events" },
+                { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="font-body text-white/50 hover:text-gold transition-colors text-sm"
                   >
-                    → {link.label}
+                    {link.label}
                   </Link>
                 </li>
               ))}
@@ -50,13 +50,13 @@ export default function Footer() {
           {/* Service Times */}
           <div>
             <h4 className="font-accent text-gold tracking-widest uppercase text-sm mb-5">
-              የአምልኮ ሰዓቶች
+              Worship Schedule
             </h4>
             <div className="space-y-3">
               {[
-                { day: "እሁድ", time: "ጠዋት 9:00", label: "ዋና አምልኮ" },
-                { day: "ረቡዕ", time: "ምሽት 6:30", label: "የቃሉ ጥናት" },
-                { day: "ሰኞ", time: "ምሽት 7:00", label: "የጸሎት ስብሰባ" },
+                { day: "Sunday", time: "9:00AM", label: "Worship" },
+                { day: "Wednesday", time: "6:30PM", label: "Bible Study" },
+                { day: "Monday", time: "7:00PM", label: "Prayer Meeting" },
               ].map((s) => (
                 <div key={s.day} className="flex items-center gap-3">
                   <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />

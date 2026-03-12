@@ -3,10 +3,10 @@ import Link from "next/link";
 import SectionHeader from "@/components/SectionHeader";
 
 const serviceSchedule = [
-  { day: "እሁድ", time: "ጠዋት 9:00", title: "ዋና አምልኮ", icon: "🕊️", color: "from-church-blue to-church-blue-dark" },
-  { day: "ረቡዕ", time: "ምሽት 6:30", title: "የቃሉ ጥናት", icon: "📖", color: "from-deep-blue to-blue-900" },
-  { day: "ሰኞ", time: "ምሽት 7:00", title: "የጸሎት ስብሰባ", icon: "🙏", color: "from-emerald-800 to-emerald-900" },
-  { day: "ቅዳሜ", time: "ቀን 3:00", title: "ምስጋና ቡድን", icon: "🎵", color: "from-purple-900 to-purple-950" },
+  { day: "Sunday", time: "ጠዋት 9:00", title: "Worship", icon: "🕊️", color: "from-church-blue to-church-blue-dark" },
+  { day: "Wednesday", time: "ምሽት 6:30", title: "Bible Study", icon: "📖", color: "from-deep-blue to-blue-900" },
+  { day: "Monday", time: "ምሽት 7:00", title: "Prayer Meeting", icon: "🙏", color: "from-emerald-800 to-emerald-900" },
+  { day: "Thursday", time: "ቀን 3:00", title: "Youth Group", icon: "🎵", color: "from-purple-900 to-purple-950" },
 ];
 
 const values = [
