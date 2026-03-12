@@ -72,11 +72,11 @@ export default function HomePage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/about"
               className="bg-church-blue hover:bg-church-blue-light text-white font-body px-8 py-3.5 transition-all duration-300 hover:shadow-xl hover:shadow-church-blue/40 hover:-translate-y-1">
-              ስለ እኛ ይወቁ →
+              About Us
             </Link>
             <Link href="/contact"
               className="border border-gold text-gold hover:bg-gold hover:text-church-dark font-body px-8 py-3.5 transition-all duration-300">
-              ወደ ቤቱ ኑ
+              Contact
             </Link>
           </div>
         </div>
