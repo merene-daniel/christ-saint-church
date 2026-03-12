@@ -1,7 +1,7 @@
 import SectionHeader from "@/components/SectionHeader";
 
 export const metadata = {
-  title: "ዝግጅቶች | Christ Saints' Church",
+  title: "Events | Christ Saints' Church",
 };
 
 const categoryColors: Record<string, string> = {
@@ -14,43 +14,46 @@ const categoryColors: Record<string, string> = {
 };
 
 const categoryLabels: Record<string, string> = {
-  worship: "አምልኮ",
-  prayer: "ጸሎት",
-  study: "ቃሉ ጥናት",
-  outreach: "ወንጌል",
-  youth: "ወጣቶች",
-  other: "ሌሎች",
+  worship: "Worship",
+  prayer: "Prayer",
+  study: "Bible Study",
+  outreach: "Outreach",
+  youth: "Youth",
+  other: "Other",
 };
 
 const sampleEvents = [
   {
     _id: "1",
-    titleAm: "የዓቢይ ጸሎት ምሽት",
+    titleAm: "Grand Prayer Night",
     title: "Grand Prayer Night",
     date: new Date(Date.now() + 7 * 86400000),
-    time: "ምሽት 6:00",
-    location: "ዋናው አዳራሽ",
-    descriptionAm: "ለቤተሰብ፣ ለሀገር፣ ለቤተክርስቲያን ሁሉ አብሮ ጸሎት የምናቀርብበት ምሽት። ሁሉም ሰው እንዲቀጥቀጥ ይጋበዛሉ።",
+    time: "6:00 PM",
+    location: "Main Hall",
+    descriptionAm: "An evening of united prayer for our families, our nation, and our church. Everyone is warmly invited to join.",
+    description: "An evening of united prayer for our families, our nation, and our church. Everyone is warmly invited to join.",
     category: "prayer",
   },
   {
     _id: "2",
-    titleAm: "ቤተሰብ ቀን",
+    titleAm: "Family Day",
     title: "Family Day",
     date: new Date(Date.now() + 14 * 86400000),
-    time: "ቀን 10:00",
-    location: "ቤተክርስቲያን ቅጥር",
-    descriptionAm: "ቤተሰቦቻችን አብሮ ምግብ፣ ጨዋታ እና ምስጋና ያሳልፉ ዘንድ የተዘጋጀ ቀን።",
+    time: "10:00 AM",
+    location: "Church Grounds",
+    descriptionAm: "A day set aside for our families to share a meal, enjoy games, and give thanks together.",
+    description: "A day set aside for our families to share a meal, enjoy games, and give thanks together.",
     category: "other",
   },
   {
     _id: "3",
-    titleAm: "ወጣቶች ስብሰባ",
+    titleAm: "Youth Conference",
     title: "Youth Conference",
     date: new Date(Date.now() + 21 * 86400000),
-    time: "ከሰዓት 2:00",
-    location: "የወጣቶች አዳራሽ",
-    descriptionAm: "ወጣቶቹ ቃሉን ሲማሩ፣ ሲዘፍኑ፣ ሲጸልዩ — ትውልዱ ለጌታ ቀርቧል።",
+    time: "2:00 PM",
+    location: "Youth Hall",
+    descriptionAm: "Young people gather to study the Word, worship, and pray — a generation drawing close to the Lord.",
+    description: "Young people gather to study the Word, worship, and pray — a generation drawing close to the Lord.",
     category: "youth",
   },
 ];
@@ -78,15 +81,15 @@ export default async function EventsPage() {
         <div className="relative z-10">
           <p className="font-accent text-gold/75 uppercase tracking-[5px] text-sm mb-4">Events</p>
           <h1 className="font-display text-5xl md:text-6xl text-white font-black">
-            ቀጣይ <span className="text-shimmer">ዝግጅቶች</span>
+            Upcoming <span className="text-shimmer">Events</span>
           </h1>
-          <p className="font-body text-white/50 text-base mt-3">አብሮ እናቅዳለን፣ አብሮ ደስ ይለናል</p>
+          <p className="font-body text-white/50 text-base mt-3">Plan together, grow together</p>
         </div>
       </section>
 
       <section className="py-24 px-6 bg-cream">
         <div className="max-w-4xl mx-auto">
-          <SectionHeader label="Calendar" title="የሚመጡ ዝግጅቶች" />
+          <SectionHeader label="Calendar" title="Coming Up" />
           <div className="space-y-5">
             {events.map((event: {
               _id: string;
@@ -96,6 +99,7 @@ export default async function EventsPage() {
               time: string;
               location: string;
               descriptionAm: string;
+              description: string;
               category: string;
             }) => {
               const d = new Date(event.date);
@@ -106,19 +110,19 @@ export default async function EventsPage() {
                   <div className="bg-church-dark text-white flex flex-col items-center justify-center px-8 py-6 min-w-[100px]">
                     <span className="font-display text-4xl font-black text-gold">{d.getDate()}</span>
                     <span className="font-accent italic text-white/60 text-sm">
-                      {d.toLocaleDateString("am-ET", { month: "short" })}
+                      {d.toLocaleDateString("en-US", { month: "short" })}
                     </span>
                     <span className="font-body text-white/40 text-xs">{d.getFullYear()}</span>
                   </div>
                   {/* Content */}
                   <div className="p-6 flex-1">
                     <div className="flex items-start justify-between gap-4 mb-2">
-                      <h3 className="font-display text-xl text-church-dark font-bold">{event.titleAm}</h3>
+                      <h3 className="font-display text-xl text-church-dark font-bold">{event.title}</h3>
                       <span className={`text-xs px-3 py-1 font-body flex-shrink-0 ${categoryColors[event.category] || categoryColors.other}`}>
-                        {categoryLabels[event.category] || "ሌሎች"}
+                        {categoryLabels[event.category] || "Other"}
                       </span>
                     </div>
-                    <p className="font-body text-[#6a5a50] text-sm leading-relaxed mb-4">{event.descriptionAm}</p>
+                    <p className="font-body text-[#6a5a50] text-sm leading-relaxed mb-4">{event.description || event.descriptionAm}</p>
                     <div className="flex flex-wrap gap-6 text-xs font-body text-[#9a8a80]">
                       <span>⏰ {event.time}</span>
                       <span>📍 {event.location}</span>
