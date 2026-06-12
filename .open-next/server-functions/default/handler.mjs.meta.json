@@ -3673,12 +3673,12 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
+    ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
       "bytes": 316,
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
+    ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
       "bytes": 316,
       "imports": [],
       "format": "cjs"
@@ -3727,14 +3727,14 @@
           "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/admin/login/route_client-reference-manifest.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/api/events/route_client-reference-manifest.js",
@@ -8725,7 +8725,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/mongoose/lib/cursor/changeStream.js": {
-      "bytes": 5218,
+      "bytes": 6078,
       "imports": [
         {
           "path": "events",
@@ -10280,7 +10280,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/mongoose/lib/schemaType.js": {
-      "bytes": 55930,
+      "bytes": 55644,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/mongoose/lib/error/index.js",
@@ -12076,7 +12076,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/mongoose/lib/schema/string.js": {
-      "bytes": 20221,
+      "bytes": 20799,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/mongoose/lib/schemaType.js",
@@ -12638,7 +12638,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/mongoose/lib/helpers/setDefaultsOnInsert.js": {
-      "bytes": 4074,
+      "bytes": 4600,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/mongoose/lib/helpers/get.js",
@@ -13116,31 +13116,26 @@
       ],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/node_modules/has-flag/index.js": {
-      "bytes": 330,
-      "imports": [],
-      "format": "cjs"
-    },
     ".open-next/server-functions/default/node_modules/supports-color/index.js": {
-      "bytes": 2748,
+      "bytes": 4065,
       "imports": [
         {
-          "path": "os",
-          "kind": "require-call",
+          "path": "node:process",
+          "kind": "import-statement",
           "external": true
         },
         {
-          "path": "tty",
-          "kind": "require-call",
+          "path": "node:os",
+          "kind": "import-statement",
           "external": true
         },
         {
-          "path": ".open-next/server-functions/default/node_modules/has-flag/index.js",
-          "kind": "require-call",
-          "original": "has-flag"
+          "path": "node:tty",
+          "kind": "import-statement",
+          "external": true
         }
       ],
-      "format": "cjs"
+      "format": "esm"
     },
     ".open-next/server-functions/default/node_modules/debug/src/node.js": {
       "bytes": 4728,
@@ -13593,7 +13588,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/mongoose/lib/aggregate.js": {
-      "bytes": 36881,
+      "bytes": 37596,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/mongoose/lib/cursor/aggregationCursor.js",
@@ -14126,7 +14121,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/mongoose/lib/model.js": {
-      "bytes": 193543,
+      "bytes": 193558,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/mongoose/lib/aggregate.js",
@@ -18837,13 +18832,18 @@
           "external": true
         },
         {
-          "path": "os",
-          "kind": "require-call",
+          "path": "node:process",
+          "kind": "import-statement",
           "external": true
         },
         {
-          "path": "tty",
-          "kind": "require-call",
+          "path": "node:os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:tty",
+          "kind": "import-statement",
           "external": true
         },
         {
@@ -19342,7 +19342,7 @@
           "bytesInOutput": 1261
         },
         ".open-next/server-functions/default/node_modules/next/dist/lib/picocolors.js": {
-          "bytesInOutput": 2888
+          "bytesInOutput": 2898
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/runtime-reacts.external.js": {
           "bytesInOutput": 813
@@ -20001,10 +20001,10 @@
         ".open-next/server-functions/default/.next/server/app/api/admin/login/route_client-reference-manifest.js": {
           "bytesInOutput": 472
         },
-        ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
+        ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
           "bytesInOutput": 464
         },
-        ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
+        ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
           "bytesInOutput": 464
         },
         ".open-next/server-functions/default/.next/server/app/api/events/route_client-reference-manifest.js": {
@@ -20155,7 +20155,7 @@
           "bytesInOutput": 6181
         },
         ".open-next/server-functions/default/node_modules/mongoose/node_modules/mongodb/lib/cmap/handshake/client_metadata.js": {
-          "bytesInOutput": 5799
+          "bytesInOutput": 5805
         },
         ".open-next/server-functions/default/node_modules/webidl-conversions/lib/index.js": {
           "bytesInOutput": 8624
@@ -20551,7 +20551,7 @@
           "bytesInOutput": 8566
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/cursor/changeStream.js": {
-          "bytesInOutput": 3320
+          "bytesInOutput": 3796
         },
         ".open-next/server-functions/default/node_modules/kareem/index.js": {
           "bytesInOutput": 10078
@@ -20791,7 +20791,7 @@
           "bytesInOutput": 11960
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/schemaType.js": {
-          "bytesInOutput": 17584
+          "bytesInOutput": 17366
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/options/virtualOptions.js": {
           "bytesInOutput": 1062
@@ -21025,7 +21025,7 @@
           "bytesInOutput": 1026
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/schema/string.js": {
-          "bytesInOutput": 6459
+          "bytesInOutput": 6837
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/cast/uuid.js": {
           "bytesInOutput": 1188
@@ -21088,7 +21088,7 @@
           "bytesInOutput": 670
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/helpers/setDefaultsOnInsert.js": {
-          "bytesInOutput": 2374
+          "bytesInOutput": 2592
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/helpers/model/castBulkWrite.js": {
           "bytesInOutput": 7796
@@ -21154,19 +21154,16 @@
           "bytesInOutput": 3164
         },
         ".open-next/server-functions/default/node_modules/debug/src/common.js": {
-          "bytesInOutput": 3737
+          "bytesInOutput": 3740
         },
         ".open-next/server-functions/default/node_modules/debug/src/browser.js": {
           "bytesInOutput": 2978
         },
-        ".open-next/server-functions/default/node_modules/has-flag/index.js": {
-          "bytesInOutput": 387
-        },
         ".open-next/server-functions/default/node_modules/supports-color/index.js": {
-          "bytesInOutput": 2088
+          "bytesInOutput": 3059
         },
         ".open-next/server-functions/default/node_modules/debug/src/node.js": {
-          "bytesInOutput": 2551
+          "bytesInOutput": 2593
         },
         ".open-next/server-functions/default/node_modules/debug/src/index.js": {
           "bytesInOutput": 265
@@ -21184,7 +21181,7 @@
           "bytesInOutput": 1368
         },
         ".open-next/server-functions/default/node_modules/mquery/lib/collection/index.js": {
-          "bytesInOutput": 332
+          "bytesInOutput": 336
         },
         ".open-next/server-functions/default/node_modules/mquery/lib/mquery.js": {
           "bytesInOutput": 23694
@@ -21223,7 +21220,7 @@
           "bytesInOutput": 1239
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/aggregate.js": {
-          "bytesInOutput": 10586
+          "bytesInOutput": 10837
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/options/saveOptions.js": {
           "bytesInOutput": 324
@@ -21310,7 +21307,7 @@
           "bytesInOutput": 660
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/model.js": {
-          "bytesInOutput": 68155
+          "bytesInOutput": 68165
         },
         ".open-next/server-functions/default/node_modules/mongoose/lib/helpers/pluralize.js": {
           "bytesInOutput": 1342
@@ -21397,7 +21394,7 @@
           "bytesInOutput": 13440
         },
         ".open-next/server-functions/default/node_modules/next/dist/compiled/next-server/app-page-turbo.runtime.prod.js": {
-          "bytesInOutput": 663584
+          "bytesInOutput": 663587
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/app-render/dynamic-access-async-storage-instance.js": {
           "bytesInOutput": 538
@@ -21754,7 +21751,7 @@
           "bytesInOutput": 577
         },
         ".open-next/server-functions/default/node_modules/next/dist/lib/static-env.js": {
-          "bytesInOutput": 1808
+          "bytesInOutput": 1811
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/lib/module-loader/node-module-loader.js": {
           "bytesInOutput": 382
@@ -21787,13 +21784,13 @@
           "bytesInOutput": 27893
         },
         ".open-next/server-functions/default/open-next.config.mjs": {
-          "bytesInOutput": 5074
+          "bytesInOutput": 5084
         },
         ".open-next/server-functions/default/index.mjs": {
-          "bytesInOutput": 60978
+          "bytesInOutput": 60980
         }
       },
-      "bytes": 5150560
+      "bytes": 5152342
     }
   }
 }
