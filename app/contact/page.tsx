@@ -89,7 +89,7 @@ export default function ContactPage() {
                   { day: "Sunday", time: "2:00 - 4:30 PM", label: "Main Worship" },
                   { day: "Wednesday", time: "7:00 - 8:30 PM", label: "Bible Study" },
                   { day: "Saturday", time: "11:00 AM - 1:00 PM", label: "Prayer Meeting (Every Two Weeks)"},
-                    { day: "Sunday", time: "2:00 - 4:30 PM" ,label: "Youth Group (Sunday School)"},
+                    { day: "Sunday_Youth", time: "2:00 - 4:30 PM" ,label: "Youth Group (Sunday School)"},
                   { day: "Monday", time: "11:00 AM - 7:00 PM", label: "Prayer Meeting" },
                 ].map((s) => (
                   <div key={s.day} className="flex justify-between items-center py-2 border-b border-gold/15 last:border-0">

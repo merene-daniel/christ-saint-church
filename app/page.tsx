@@ -5,8 +5,8 @@ import SectionHeader from "@/components/SectionHeader";
 const serviceSchedule = [
   { day: "Sunday", time: "2:00 - 4:30 PM", title: "Worship", icon: "🕊️", color: "from-church-blue to-church-blue-dark" },
   { day: "Wednesday", time: "7:00 - 8:30 PM", title: "Bible Study", icon: "📖", color: "from-deep-blue to-blue-900" },
-  { day: "Saturday", time: "11:00 AM - 1:00 PM", title: "Prayer Meeting (Every Two Weeks)", icon: "🙏", color: "from-emerald-800 to-emerald-900" },
-  { day: "Sunday", time: "2:00 - 4:30 PM" ,title: "Youth Group (Sunday School)", icon: "🎵", color: "from-purple-900 to-purple-950" },
+  { day: "Saturday_Prayer", time: "11:00 AM - 1:00 PM", title: "Prayer Meeting (Every Two Weeks)", icon: "🙏", color: "from-emerald-800 to-emerald-900" },
+  { day: "Sunday_Youth", time: "2:00 - 4:30 PM" ,title: "Youth Group (Sunday School)", icon: "🎵", color: "from-purple-900 to-purple-950" },
   { day: "Saturday", time: "11:00 AM - 7:00 PM", title: "Evangelism (Every Two Weeks)", icon: "📖", color: "from-gray-400 to-gray-500" },
 ];
 
