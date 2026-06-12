@@ -54,9 +54,11 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {[
-                { day: "Sunday", time: "9:00AM", label: "Worship" },
-                { day: "Wednesday", time: "6:30PM", label: "Bible Study" },
-                { day: "Monday", time: "7:00PM", label: "Prayer Meeting" },
+                  { day: "Sunday", time: "2:00 - 4:30 PM", label: "Worship" },
+                  { day: "Wednesday", time: "7:00 - 8:30 PM", label: "Bible Study",},
+                  { day: "Saturday", time: "11:00 AM - 1:00 PM", label: "Prayer Meeting (Every Two Weeks)"},
+                  { day: "Sunday", time: "2:00 - 4:30 PM" ,label: "Youth Group (Sunday School)"},
+                  { day: "Saturday", time: "11:00 AM - 7:00 PM", label: "Evangelism (Every Two Weeks)" },
               ].map((s) => (
                 <div key={s.day} className="flex items-center gap-3">
                   <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />

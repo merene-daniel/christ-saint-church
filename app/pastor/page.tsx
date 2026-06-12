@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "ፓስተር ቤዛ ሜርኔ | Christ Saints' Church",
+  title: "Pastor Beza Merne | Christ Saints' Church",
 };
 
 export default function PastorPage() {
@@ -55,13 +55,13 @@ export default function PastorPage() {
                 {/* English */}
                 <div className="space-y-5 font-body text-[#5a4a40] text-sm leading-relaxed">
                   <p>
-                    Pastor Beza Taye Merne was born in Eastern Ethiopia. He completed his secondary education in Dire Dawa and holds a Bachelor&apos;s degree in Theology from Mekane Yesus Seminary (Debre Zeit, Bishoftu), Ethiopia.
+                    Pastor Beza Taye Merne was born and raised in Eastern Ethiopia. He completed his secondary education in the city of Dire Dawa and earned a Bachelor's Degree in Theology from the Meserete Kristos Church Seminary in Bishoftu (formerly Debre Zeit), Ethiopia.
                   </p>
                   <p>
-                    He served for sixteen years as a pastor and church planter among Mekane Yesus churches in Eastern Ethiopia. By God&apos;s will and the guidance of the Holy Spirit, he and his wife Yotnait Weldegiorgis — along with brothers Tewodros Menale, Aynegda Ayenew, Ermias Shani, and sister Rahel Alemayehu — moved to Alexandria, Virginia in 2019, where they planted and now serve Christ Saints&apos; Church.
+                    For sixteen years, Pastor Beza faithfully served as a pastor and church planter among Meserete Kristos churches throughout Eastern Ethiopia, dedicating his life to evangelism, discipleship, and church growth. In 2019, following God's calling and the leading of the Holy Spirit, he and his wife, Yetnait Weldegiorgis, relocated to Alexandria, Virginia. Together, they founded Christ Saints' Church, where Pastor Beza continues to serve as the founding pastor and spiritual leader.
                   </p>
                   <p>
-                    Pastor Beza is a husband and father of one child. He is a devoted follower of Christ, a passionate ambassador of the Gospel, and a friend to all people. He finds great joy in proclaiming the Good News — seeing people receive Christ, live joyfully in Him, and grow as disciples of Jesus Christ.
+                    Pastor Beza is a devoted husband and loving father. He is deeply committed to sharing the Gospel of Jesus Christ, equipping believers for spiritual growth, and serving people with compassion and humility. His greatest joy is seeing lives transformed by Christ, witnessing individuals come to faith, and helping them grow into mature disciples who faithfully follow Jesus. Through his ministry, he strives to glorify God and inspire others to live with faith, hope, and purpose in Christ.
                   </p>
                 </div>
 
@@ -69,13 +69,14 @@ export default function PastorPage() {
                 <div className="space-y-5 font-body text-[#5a4a40] text-sm leading-relaxed">
 
                   <p>
-                    ፓስተር ቤዛ መርኔ በምስራቅ ኢትዮጵያ ተወለዱ። ሁለተኛ ደረጃ ትምህርታቸውን ድሬዳዋ አጠናቀቁ። ከደብረዘይት ቢሾፍቱ መሠረተ ክርስቶስ ኮሌጅ ኢትዮጵያ በሥነ መለኮት የመጀመሪያ ዲግሪ አላቸው።
+                    ፓስተር ቤዛ ታዬ  መርኔ በምስራቅ ኢትዮጵያ ተወልደው እና አድገዋል። የሁለተኛ ደረጃ ትምህርታቸውን በድሬዳዋ ከተማ አጠናቀው፣ ከመሰረተ ክርስቶስ ቤተ ክርስቲያን ሴሚናሪ (ቢሾፍቱ/ደብረ ዘይት) በሥነ መለኮት (Theology) የባችለር ዲግሪ አግኝተዋል።
                   </p>
                   <p>
-                    ለአስራ ስድስት ዓመታት በምስራቅ ኢትዮጵያ በሚገኙ የመሠረተ ክርስቶስ አብያተ ክርስቲያናት እንደ ፓስተርና የቤተክርስቲያን መሥራች አገልግለዋል። በእግዚአብሔር ፈቃድና በመንፈስ ቅዱስ መሪነት፣ እርሳቸውና ባለቤታቸው ዮትናዬት ወልደጊዮርጊስ — ወንድሞቻቸው ቴዎድሮስ ምናሌ፣ አይነግዳ አየነው፣ ኤርምያስ ሻኒ እና እህታቸው ራሄሌ አለማየው — በ2019 ወደ ቨርጂኒያ አሌክሳንድሪያ ሄደው የክርስቶስ መሠረት ቤተክርስቲያንን መትከል ጀምረው አሁን ያገለግላሉ።
+                    ፓስተር ቤዛ በምስራቅ ኢትዮጵያ በሚገኙ የመሰረተ ክርስቶስ አብያተ ክርስቲያናት ውስጥ ለ16 ዓመታት በታማኝነት እንደ ፓስተርና አዲስ ቤተ ክርስቲያን ተክላይ (Church Planter) አገልግለዋል። በ2019 ዓ.ም. በእግዚአብሔር ጥሪና በመንፈስ ቅዱስ ምሪት፣ ከባለቤታቸው ከወ/ሮ የትናይት ወልደ ጊዮርጊስ ጋር ወደ አሌክሳንድሪያ፣ ቨርጂኒያ ተዛውረዋል። የክርስቶስ መሠረት ቤተክርስቲያንን  መስርተው እስከ ዛሬ ድረስ እንደ መሥራች እና ዋና ፓስተር በትጋት እያገለገሉ ይገኛሉ።
                   </p>
                   <p>
-                    ፓስተር ቤዛ ሜርኔ የአንዲት ሚስት ባልና የአንድ ልጅ አባት ናቸው። የክርስቶስ ተከታይ፣ ቀናኢ አምባሳደር እና የሰዎች ወዳጅ የሆኑ የቅዱስ መጽሐፍ ሰባኪ ናቸው። ወንጌልን ለሰዎች ለመናገር ደስታና ክብር ይሰማቸዋል፤ ሰዎች ክርስቶስን ሲቀበሉ፣ ደስተኛ ሕይወት በክርስቶስ ሲኖሩ፣ እና የኢየሱስ ክርስቶስ ደቀ መዛሙርት ሲሆኑ ሲያዩ ደስ ይላቸዋል።
+
+                    ፓስተር ቤዛ  ታማኝ ባልና የቤተሰብ ኃላፊ ናቸው። ወንጌልን በታማኝነት ለማወጅ፣ አማኞችን በእምነታቸው ለማሳደግ እና ሰዎችን በፍቅርና በትሕትና ለማገልገል በጥልቅ የተሰጡ ናቸው። ሰዎች ክርስቶስን እንዲያውቁ፣ ሕይወታቸው በእርሱ እንዲለወጥ እና የኢየሱስ ክርስቶስ ደቀ መዛሙርት ሆነው እንዲያድጉ ማየት ታላቅ ደስታቸው ነው። በአገልግሎታቸው ሁሉ እግዚአብሔርን ለማክበር እና ሌሎችን በእምነት፣ በተስፋ እና በክርስቶስ ዓላማ የተሞላ ሕይወት እንዲኖሩ ለማነሳሳት ይተጋሉ።
                   </p>
                 </div>
               </div>

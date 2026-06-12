@@ -3,10 +3,11 @@ import Link from "next/link";
 import SectionHeader from "@/components/SectionHeader";
 
 const serviceSchedule = [
-  { day: "Sunday", time: "9:00 AM", title: "Worship", icon: "🕊️", color: "from-church-blue to-church-blue-dark" },
-  { day: "Wednesday", time: "6:30 PM", title: "Bible Study", icon: "📖", color: "from-deep-blue to-blue-900" },
-  { day: "Monday", time: "7:00 PM", title: "Prayer Meeting", icon: "🙏", color: "from-emerald-800 to-emerald-900" },
-  { day: "Thursday", time: "3:00 PM", title: "Youth Group", icon: "🎵", color: "from-purple-900 to-purple-950" },
+  { day: "Sunday", time: "2:00 - 4:30 PM", title: "Worship", icon: "🕊️", color: "from-church-blue to-church-blue-dark" },
+  { day: "Wednesday", time: "7:00 - 8:30 PM", title: "Bible Study", icon: "📖", color: "from-deep-blue to-blue-900" },
+  { day: "Saturday", time: "11:00 AM - 1:00 PM", title: "Prayer Meeting (Every Two Weeks)", icon: "🙏", color: "from-emerald-800 to-emerald-900" },
+  { day: "Sunday", time: "2:00 - 4:30 PM" ,title: "Youth Group (Sunday School)", icon: "🎵", color: "from-purple-900 to-purple-950" },
+  { day: "Saturday", time: "11:00 AM - 7:00 PM", title: "Evangelism (Every Two Weeks)", icon: "📖", color: "from-gray-400 to-gray-500" },
 ];
 
 const values = [
@@ -16,9 +17,9 @@ const values = [
     desc: "Scripture is our sole foundation. We order every aspect of our lives by the light of God's Word.",
   },
   {
-    icon: "❤️",
-    title: "Love",
-    desc: "Showing love to one another and to all people is at the heart of our mission.",
+    icon: "📢",
+    title: "Gospel",
+    desc: "Proclaiming the Good News of Jesus Christ is central to everything we do, both within our walls and beyond.",
   },
   {
     icon: "🌍",
@@ -91,7 +92,7 @@ export default function HomePage() {
       {/* ─── SERVICE TIMES ───────────────────────────────────── */}
       <section className="bg-[#0D1B3E] py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {serviceSchedule.map((s) => (
               <div key={s.day}
                 className={`bg-gradient-to-br ${s.color} p-6 border border-white/5 hover:-translate-y-1 transition-transform`}>

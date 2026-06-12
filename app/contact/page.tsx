@@ -45,7 +45,6 @@ export default function ContactPage() {
       <section className="relative py-40 px-6 bg-hero-gradient text-center overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(139,26,26,0.3)_0%,transparent_70%)] pointer-events-none" />
         <div className="relative z-10">
-          <p className="font-accent text-gold/75 uppercase tracking-[5px] text-sm mb-4">Contact</p>
           <h1 className="font-display text-5xl md:text-6xl text-white font-black">
             <span className="text-shimmer">Contact Us</span>
           </h1>
@@ -64,7 +63,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               {[
                 { icon: "📍", label: "Location", val: "Alexandria, Virginia" },
-                { icon: "📞", label: "Phone", val: "+1 (XXX) XXX-XXXX" },
+                { icon: "📞", label: "Phone", val: "+1 (703) 420-9049" },
                 { icon: "✉️", label: "Email", val: "info@christsaintschurch.org" },
                 { icon: "🕐", label: "Office Hours", val: "Mon – Fri · 9 AM – 5 PM" },
               ].map((item) => (
@@ -87,9 +86,11 @@ export default function ContactPage() {
               <h3 className="font-display text-church-dark text-lg font-bold mb-4">Service Times</h3>
               <div className="space-y-3">
                 {[
-                  { day: "Sunday", time: "9:00 AM", label: "Main Worship" },
-                  { day: "Wednesday", time: "6:30 PM", label: "Bible Study" },
-                  { day: "Monday", time: "7:00 PM", label: "Prayer Meeting" },
+                  { day: "Sunday", time: "2:00 - 4:30 PM", label: "Main Worship" },
+                  { day: "Wednesday", time: "7:00 - 8:30 PM", label: "Bible Study" },
+                  { day: "Saturday", time: "11:00 AM - 1:00 PM", label: "Prayer Meeting (Every Two Weeks)"},
+                    { day: "Sunday", time: "2:00 - 4:30 PM" ,label: "Youth Group (Sunday School)"},
+                  { day: "Monday", time: "11:00 AM - 7:00 PM", label: "Prayer Meeting" },
                 ].map((s) => (
                   <div key={s.day} className="flex justify-between items-center py-2 border-b border-gold/15 last:border-0">
                     <div>
