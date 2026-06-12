@@ -3673,12 +3673,12 @@
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
+    ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
       "bytes": 316,
       "imports": [],
       "format": "cjs"
     },
-    ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
+    ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
       "bytes": 316,
       "imports": [],
       "format": "cjs"
@@ -3727,14 +3727,14 @@
           "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/admin/login/route_client-reference-manifest.js"
         },
         {
-          "path": ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js",
-          "kind": "require-call",
-          "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js"
-        },
-        {
           "path": ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js",
           "kind": "require-call",
           "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js"
+        },
+        {
+          "path": ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js",
+          "kind": "require-call",
+          "original": "/home/daniel/Documents/christ-saints-church/.open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js"
         },
         {
           "path": ".open-next/server-functions/default/.next/server/app/api/events/route_client-reference-manifest.js",
@@ -20001,10 +20001,10 @@
         ".open-next/server-functions/default/.next/server/app/api/admin/login/route_client-reference-manifest.js": {
           "bytesInOutput": 472
         },
-        ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
+        ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
           "bytesInOutput": 464
         },
-        ".open-next/server-functions/default/.next/server/app/api/sermons/route_client-reference-manifest.js": {
+        ".open-next/server-functions/default/.next/server/app/api/contact/route_client-reference-manifest.js": {
           "bytesInOutput": 464
         },
         ".open-next/server-functions/default/.next/server/app/api/events/route_client-reference-manifest.js": {

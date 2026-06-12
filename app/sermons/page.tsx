@@ -1,4 +1,5 @@
 import SectionHeader from "@/components/SectionHeader";
+import YoutubeEmbed from "@/components/YoutubeEmbed";
 import { connectToDatabase } from "@/lib/mongodb";
 import { Sermon } from "@/lib/models";
 
