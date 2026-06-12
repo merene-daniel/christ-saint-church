@@ -56,8 +56,8 @@ export default function Footer() {
               {[
                   { day: "Sunday", time: "2:00 - 4:30 PM", label: "Worship" },
                   { day: "Wednesday", time: "7:00 - 8:30 PM", label: "Bible Study",},
-                  { day: "Saturday", time: "11:00 AM - 1:00 PM", label: "Prayer Meeting (Every Two Weeks)"},
-                  { day: "Sunday", time: "2:00 - 4:30 PM" ,label: "Youth Group (Sunday School)"},
+                  { day: "Saturday_Prayer", time: "11:00 AM - 1:00 PM", label: "Prayer Meeting (Every Two Weeks)"},
+                  { day: "Sunday_Youth", time: "2:00 - 4:30 PM" ,label: "Youth Group (Sunday School)"},
                   { day: "Saturday", time: "11:00 AM - 7:00 PM", label: "Evangelism (Every Two Weeks)" },
               ].map((s) => (
                 <div key={s.day} className="flex items-center gap-3">
